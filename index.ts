@@ -5,7 +5,18 @@ import './style.css';
 const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
 
-function getFullname(firstname: string, lastNane: string) {
-  console.log(firstname + lastNane);
-}
-getFullname('mohasin', '23');
+let arr: (string | number)[] = [];
+arr.push('abul', 'babul', 2);
+console.log(arr);
+
+let obj: {
+  name: string;
+  age: number;
+  adult: boolean;
+};
+
+obj = {
+  name: 'hasin haider',
+  age: 34,
+  adult: true,
+};
